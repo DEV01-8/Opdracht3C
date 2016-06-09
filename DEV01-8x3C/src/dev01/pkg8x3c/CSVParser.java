@@ -26,7 +26,7 @@ public class CSVParser {
     private static final float START_Y = 436964f;
     final static Logger logger = Logger.getLogger(CSVParser.class);
 
-    public static ArrayList<PVector> read() {
+    public static ArrayList<PVector> read(int limit) {
         try {
             logger.info("Reading CSV...");
 
@@ -53,7 +53,7 @@ public class CSVParser {
                 float limitY = (START_Y - tempVector.y);
 
                 //if x and y are equal or lower add to arraylist
-                if (limitX <= 1000 && limitY <= 1000) {
+                if (limitX <= limit && limitY <= limit) {
                     points.add(tempVector);
                 }
                 if (MIN_Z > z) {
