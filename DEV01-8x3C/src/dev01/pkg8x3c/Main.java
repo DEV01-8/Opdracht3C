@@ -31,7 +31,7 @@ public class Main extends PApplet {
     float waterLevel = -5f;
     float raiseWater = 0.100f;
     //Integers
-    int frames = 8;
+    int frames = 4;
     //Logger
     final Logger logger = Logger.getLogger(Main.class);
     //Booleans
